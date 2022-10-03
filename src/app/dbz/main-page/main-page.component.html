@@ -1,0 +1,22 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+	
+	<div class="col">
+		<!-- 
+			Con el [] bindeamos la propiedad personajes del componente hijo 
+			con lo que tiene la propiedad "personajes" del componente padre 
+		-->
+		<app-personajes></app-personajes>
+	</div>
+
+	<div class="col">
+		<!-- 
+			Con el () definimos un evento que se ejecuta en el componente hijo 
+			y que se emite al componente padre ejecutando el método "agregarNuevoPersonaje($event)"
+		-->
+		<app-agregar [nuevo]="nuevo">
+		</app-agregar>
+	</div>
+</div>
